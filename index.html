@@ -85,7 +85,7 @@ p{margin:0}
 .rcard .foot-row b{color:var(--ink);font-weight:600}
 
 /* key figures */
-.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
 .fig{padding:22px 20px 22px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
 .fig+.fig{padding-left:20px;border-left:1px solid var(--line)}
 .fig b{font-family:var(--f-display);font-size:clamp(30px,4vw,42px);line-height:1.1;font-weight:700;font-variant-numeric:tabular-nums}
@@ -181,9 +181,6 @@ p{margin:0}
 
 @media (max-width:860px){
   .hero{grid-template-columns:1fr;gap:56px}
-  .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .fig:nth-child(3){padding-left:0;border-left:0}
-  .fig:nth-child(n+3){border-top:1px solid var(--line)}
   .summary,.ana{grid-template-columns:1fr}
   .real{grid-template-columns:1fr;max-width:460px}
   .tl{grid-template-columns:1fr 1fr;row-gap:28px}
@@ -194,6 +191,8 @@ p{margin:0}
   .lb-info .lb-note{display:none}
 }
 @media (max-width:520px){
+  .figs{grid-template-columns:1fr}
+  .fig+.fig{padding-left:0;border-left:0;border-top:1px solid var(--line)}
   .wrap{gap:56px;padding-block:28px 56px}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
   .tl{grid-template-columns:1fr}
@@ -225,10 +224,9 @@ p{margin:0}
 
   <section aria-label="핵심 수치">
     <div class="figs">
-      <div class="fig"><b>2만<small>회</small></b><span class="k">연록 X 오픈 공지 조회</span><span class="src">@yeonrok_shop, 10.8 오후 8:11 게시</span></div>
-      <div class="fig"><b>10<small>건</small></b><span class="k">연록 인스타가 공유한 고객 스토리</span><span class="src">yeonrok.official 스토리 캡처 기준</span></div>
-      <div class="fig"><b>30<small>분</small></b><span class="k">고객이 전한 매진 체감 시간</span><span class="src">X @xxx1hadexxx, 10.9 게시</span></div>
-      <div class="fig"><b>11<small>건</small></b><span class="k">공개된 주문 인증</span><span class="src">나비 300 · 앵초 200, 전 건 앤 카슨 도서 포함</span></div>
+      <div class="fig"><b>25,282,050<small>원</small></b><span class="k">끈갈피 포함 총 주문금액</span></div>
+      <div class="fig"><b>478<small>건</small></b><span class="k">총 주문건수</span></div>
+      <div class="fig"><b>400<small>건</small></b><span class="k">끈갈피 구매자 중 앤 카슨 상품 구매건수</span></div>
     </div>
   </section>
 
